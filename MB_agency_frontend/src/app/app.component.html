@@ -1,0 +1,66 @@
+<!--
+<nz-layout class="app-layout">
+  <nz-sider class="menu-sidebar"
+            nzCollapsible
+            nzWidth="256px"
+            nzBreakpoint="md"
+            [(nzCollapsed)]="isCollapsed"
+            [nzTrigger]="null">
+    <div class="sidebar-logo">
+      <a href="#" target="_blank">
+        <img src="assets/logo_mb_agency.png" alt="logo">
+        <h1>MB Agency</h1>
+      </a>
+    </div>
+    <ul nz-menu nzTheme="dark" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
+      <li
+          nz-menu-item
+          nzMatchRouter
+          routerLink="/dashboard"
+        >
+          <span nz-icon nzType="dashboard"></span>
+          <span>Dashboard</span>
+      </li>
+      <li
+          nz-menu-item
+          nzMatchRouter
+          routerLink="/users"
+        >
+          <span nz-icon nzType="dashboard"></span>
+          <router-outlet></router-outlet>
+          <span>Usuarios</span>
+      </li>
+      <li nz-submenu nzTitle="Maestros" nzIcon="unordered-list">
+        <ul>
+          <li nz-menu-item nzMatchRouter routerLink="/employees">Empleados</li>
+          <li nz-menu-item nzMatchRouter routerLink="/eps">EPS</li>
+        </ul>
+      </li>
+
+    </ul>
+  </nz-sider>
+  <nz-layout>
+    <nz-header>
+      <div class="app-header">
+        <span class="header-trigger" (click)="isCollapsed = !isCollapsed">
+            <span class="trigger"
+               nz-icon
+               [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"
+            ></span>
+        </span>
+      </div>
+    </nz-header>
+    <nz-content>
+      <perfect-scrollbar>
+        <div class="inner-content">
+
+
+          <router-outlet></router-outlet>
+      </div>
+      </perfect-scrollbar>
+
+    </nz-content>
+  </nz-layout>
+</nz-layout>
+-->
+<router-outlet></router-outlet>
